@@ -1,0 +1,30 @@
+.carousel-cell {
+    width: 100%; /* full width */
+    height: max-content !important; /* height of carousel */
+    margin-right: 10px;
+}
+
+figcaption {
+    background-color: #222;
+    width: 100px;
+    border-radius: 6px;
+    color: #fff;
+    font: italic smaller sans-serif;
+    font-size: 0.75rem;
+    padding: 4px;
+    text-align: center;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+}
+
+@media screen and (min-width: 720px) {
+    figcaption {
+        width: 150px;
+        font-size: 1rem;
+        padding: 12px;
+        margin-top: -60px;
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
