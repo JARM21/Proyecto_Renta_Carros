@@ -1,0 +1,35 @@
+<a routerLink="/administracion/crear-vehiculos" class="btn">Nuevo Vehiculo</a>
+<table class="table responsive">
+    <thead>
+        <tr>
+        <th>
+            Nombre
+        </th>
+        <th>
+            Precio
+        </th>
+        <th>
+            Imagen
+        </th>
+        <th>
+            Editar 
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of listadoRegistros">
+            <td>
+                {{p.nombre}}
+            </td>
+            <td>
+                {{p.precio}}
+            </td>
+            <td>
+                <img src="{{p.imagen}}" class="imagenProducto" />
+            </td>
+            <td>
+                <a routerLink="/administracion/editar-vehiculos{{p.id}}" class="btn">Editar Vehiculo</a>
+            </td>
+        </tr>
+    </tbody>
+    </table>

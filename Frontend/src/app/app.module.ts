@@ -15,6 +15,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { FilterComponent } from './components/filter/filter.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { DestacadosComponent } from './components/destacados/destacados.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { DestacadosComponent } from './components/destacados/destacados.componen
     ContactoComponent,
     FilterComponent,
     NavbarComponent,
-    DestacadosComponent
+    DestacadosComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
